@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sección Gym</title>
 
-    <!-- Enlaces cargados desde CDN para que funcione la vista previa -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
@@ -179,7 +178,7 @@
                 </div>
                 <div class="col-md-5">
                     <div class="bg-black rounded-4 d-flex align-items-center justify-content-center border borde-personalizado text-secondary" style="height: 320px;">
-                        <img src="imagenes/imagenes.png" onerror="this.src='https://placehold.co/600x400/000000/333333?text=IMAGEN+GYM'" alt="Entrenamiento en el Gym" class="w-100 h-100 rounded-4" style="object-fit: cover;">
+                        <img src="imagenes/gym.png" onerror="this.src='" alt="Entrenamiento en el Gym" class="w-100 h-100 rounded-4" style="object-fit: cover;">
                     </div>
                 </div>
             </div>
@@ -348,8 +347,8 @@
             <div class="row g-4">
                 <div class="col-sm-6 col-lg-3">
                     <div class="color-fondo-tarjeta rounded-3 overflow-hidden border borde-personalizado tarjeta-con-efecto" style="cursor: pointer;">
-                        <div class="bg-black d-flex align-items-center justify-content-center border-bottom borde-personalizado text-secondary text-uppercase letras-separadas" style="height: 160px; font-size: 0.75rem;">
-                            [Sentadillas]
+                        <div class="bg-black border-bottom borde-personalizado" style="height: 160px;">
+                            <img src="imagenes/sentadilla.png" onerror="this.src='https://placehold.co/400x300/000000/333333?text=SENTADILLAS'" alt="Sentadillas" class="w-100 h-100" style="object-fit: cover;">
                         </div>
                         <div class="p-4 text-center">
                             <h4 class="fw-bold fs-6 text-white mb-1">Sentadilla Libre</h4>
@@ -359,8 +358,8 @@
                 </div>
                 <div class="col-sm-6 col-lg-3">
                     <div class="color-fondo-tarjeta rounded-3 overflow-hidden border borde-personalizado tarjeta-con-efecto" style="cursor: pointer;">
-                        <div class="bg-black d-flex align-items-center justify-content-center border-bottom borde-personalizado text-secondary text-uppercase letras-separadas" style="height: 160px; font-size: 0.75rem;">
-                            [Press Banca]
+                        <div class="bg-black border-bottom borde-personalizado" style="height: 160px;">
+                            <img src="imagenes/press-banca.png" onerror="this.src='https://placehold.co/400x300/000000/333333?text=PRESS+BANCA'" alt="Press de Banca" class="w-100 h-100" style="object-fit: cover;">
                         </div>
                         <div class="p-4 text-center">
                             <h4 class="fw-bold fs-6 text-white mb-1">Press de Banca</h4>
@@ -370,8 +369,8 @@
                 </div>
                 <div class="col-sm-6 col-lg-3">
                     <div class="color-fondo-tarjeta rounded-3 overflow-hidden border borde-personalizado tarjeta-con-efecto" style="cursor: pointer;">
-                        <div class="bg-black d-flex align-items-center justify-content-center border-bottom borde-personalizado text-secondary text-uppercase letras-separadas" style="height: 160px; font-size: 0.75rem;">
-                            [Peso Muerto]
+                        <div class="bg-black border-bottom borde-personalizado" style="height: 160px;">
+                            <img src="imagenes/peso-muerto.png" onerror="this.src='https://placehold.co/400x300/000000/333333?text=PESO+MUERTO'" alt="Peso Muerto" class="w-100 h-100" style="object-fit: cover;">
                         </div>
                         <div class="p-4 text-center">
                             <h4 class="fw-bold fs-6 text-white mb-1">Peso Muerto</h4>
@@ -381,8 +380,8 @@
                 </div>
                 <div class="col-sm-6 col-lg-3">
                     <div class="color-fondo-tarjeta rounded-3 overflow-hidden border borde-personalizado tarjeta-con-efecto" style="cursor: pointer;">
-                        <div class="bg-black d-flex align-items-center justify-content-center border-bottom borde-personalizado text-secondary text-uppercase letras-separadas" style="height: 160px; font-size: 0.75rem;">
-                            [Dominadas]
+                        <div class="bg-black border-bottom borde-personalizado" style="height: 160px;">
+                            <img src="imagenes/dominadas.png" onerror="this.src='https://placehold.co/400x300/000000/333333?text=DOMINADAS'" alt="Dominadas" class="w-100 h-100" style="object-fit: cover;">
                         </div>
                         <div class="p-4 text-center">
                             <h4 class="fw-bold fs-6 text-white mb-1">Dominadas</h4>
@@ -392,7 +391,6 @@
                 </div>
             </div>
         </section>
-
         <div class="row g-4 g-lg-5 mb-5 pb-5">
             <div class="col-lg-6">
                 <div class="color-fondo-tarjeta p-4 p-md-5 rounded-4 border borde-personalizado" style="border-top: 4px solid #6c757d !important;">
@@ -427,7 +425,6 @@
                 <h2 class="fs-3 fw-bold text-white mb-4 text-uppercase"><i class="bi bi-geo-alt-fill text-secondary me-2"></i> Spot de Entrenamiento (Cancún)</h2>
                 
                 <div class="d-flex flex-column gap-3 mb-4">
-                    <!-- Agregada la clase 'tarjeta-gimnasio-activa' al primer botón por defecto -->
                     <div id="btn-smartfit" onclick="actualizarMapa('smartfit')" class="d-flex align-items-center gap-4 color-fondo-tarjeta p-3 p-md-4 rounded-4 border borde-personalizado tarjeta-gimnasio-clickable tarjeta-gimnasio-activa">
                         <div class="bg-black border borde-personalizado rounded d-flex align-items-center justify-content-center flex-shrink-0 text-secondary text-uppercase letras-separadas p-1" style="width: 70px; height: 70px; font-size: 0.65rem;">
                             [Smart Fit]
