@@ -1,0 +1,96 @@
+        :root {
+            --mi-fondo-oscuro: #0a0a0a;          /* Color de fondo principal */
+            --color-tarjetas: #171717;           /* Gris de los contenedores secundarios */
+            --bordes-oscuros: #262626;           /* Color para los separadores y bordes sutiles */
+            --bordes-resaltados: #525252;        /* Color del borde cuando pasas el mouse */
+            --texto-principal: #ffffff;          /* Blanco para títulos principales */
+            --texto-secundario: #a3a3a3;         /* Gris para descripciones y textos largos */
+        }
+
+        body {
+            background-color: var(--mi-fondo-oscuro);
+            color: var(--texto-secundario);
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        /* Clases auxiliares para usar las variables personalizadas */
+        .color-fondo-tarjeta {
+            background-color: var(--color-tarjetas) !important;
+        }
+
+        .borde-personalizado {
+            border-color: var(--bordes-oscuros) !important;
+        }
+
+        .texto-gris-suave {
+            color: var(--texto-secundario) !important;
+        }
+
+        /* Navbar personalizado con efecto de desenfoque de fondo */
+        .navegacion-transparente {
+            background-color: rgba(0, 0, 0, 0.8) !important;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        /* Animación para que las tarjetas floten al pasar el puntero */
+        .tarjeta-con-efecto {
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .tarjeta-con-efecto:hover {
+            transform: translateY(-5px);
+            border-color: var(--bordes-resaltados) !important;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Quitar las flechitas molestas del input de tipo número */
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Cajas de texto personalizadas para el formulario */
+        .input-gimnasio {
+            background-color: #000;
+            border: 1px solid var(--bordes-oscuros);
+            color: #fff;
+        }
+        .input-gimnasio:focus {
+            background-color: #000;
+            border-color: #fff;
+            box-shadow: 0 0 0 0.1rem rgba(255, 255, 255, 0.25);
+            color: #fff;
+        }
+
+        /* Modificadores de espaciado para las letras */
+        .letras-juntas { letter-spacing: -0.025em; }
+        .letras-separadas { letter-spacing: 0.1em; }
+
+        /* Estilo para las preguntas frecuentes (FAQ) */
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] summary .icono-giratorio {
+            transform: rotate(180deg);
+        }
+        .icono-giratorio {
+            transition: transform 0.3s ease;
+        }
+
+        /* Clase interactiva para las tarjetas de gimnasios que controlan el mapa */
+        .tarjeta-gimnasio-clickable {
+            cursor: pointer;
+            transition: transform 0.2s ease, border-color 0.3s ease, background-color 0.3s ease;
+        }
+        .tarjeta-gimnasio-clickable:hover {
+            transform: scale(1.02);
+            background-color: #1a1a1a !important;
+        }
+        .tarjeta-gimnasio-activa {
+            border-color: #ffffff !important;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+        }

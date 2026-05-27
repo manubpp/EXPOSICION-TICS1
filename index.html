@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección Gym</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body class="antialiased">
+
+    <nav class="navbar navbar-expand-lg navegacion-transparente border-bottom borde-personalizado fixed-top">
+        <div class="container py-1">
+            <div class="d-flex w-100 justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi text-white" viewBox="0 0 16 16" style="vertical-align: middle;">
+                        <path d="M13 5a1 1 0 0 1 1 1v4a1 1 0 0 1-2 0V9H4v1a1 1 0 0 1-2 0V6a1 1 0 0 1 2 0v1h8V6a1 1 0 0 1 1-1zm1-2a1 1 0 0 1 1 1v8a1 1 0 0 1-2 0V4a1 1 0 0 1 1-1zM2 3a1 1 0 0 1 1 1v8a1 1 0 0 1-2 0V4a1 1 0 0 1 1-1z"/>
+                    </svg>
+                    <span class="fw-bold fs-5 text-white text-uppercase letras-separadas mb-0">GYM</span>
+                </div>
+
+                <div class="d-none d-lg-flex align-items-center gap-4">
+                    <a class="text-white text-decoration-none fw-bold small text-uppercase letras-separadas transition" style="border-bottom: 2px solid white; padding-bottom: 2px;" href="#">GYM</a>
+                    <a class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none fw-medium small text-uppercase letras-separadas transition" href="../salud-mental/index.html">Salud Mental</a>
+                    <a class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none fw-medium small text-uppercase letras-separadas transition" href="../higiene/index.html">Higiene Personal</a>
+                    <a class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none fw-medium small text-uppercase letras-separadas transition" href="../habitos/index.html">El Buen Beber</a>
+                    <a class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none fw-medium small text-uppercase letras-separadas transition" href="../prevencion/index.html">Prevención</a>
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                    
+                    <div class="dropdown d-lg-none">
+                        <button class="btn btn-outline-light btn-sm dropdown-toggle fw-medium px-3 py-2 d-flex align-items-center gap-2 border-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 0.9rem;">
+                            <i class="bi bi-grid-3x3-gap-fill"></i> Secciones
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end color-fondo-tarjeta border borde-personalizado p-2 shadow-lg" style="min-width: 230px;">
+                            <li><span class="dropdown-header text-uppercase text-secondary fw-bold p-1" style="font-size: 0.75rem; letter-spacing: 0.05em;">Otras Secciones</span></li>
+                            <li><hr class="dropdown-divider border-secondary my-1"></li>
+                            <li><a class="dropdown-item text-white fw-bold bg-black border borde-personalizado rounded p-2 mb-1" href="#"><i class="bi bi-fire me-2 text-white"></i> 1. GYM</a></li>
+                            
+                            <li><a class="dropdown-item text-white rounded p-2" href="../salud-mental/index.html"><i class="bi bi-emoji-smile me-2 text-secondary"></i> 2. Salud Mental</a></li>
+                            <li><a class="dropdown-item text-white rounded p-2" href="../higiene/index.html"><i class="bi bi-droplet-half me-2 text-secondary"></i> 3. Higiene Personal</a></li>
+                            <li><a class="dropdown-item text-white rounded p-2" href="../habitos/index.html"><i class="bi bi-calendar-check me-2 text-secondary"></i> 4. Hábitos Saludables</a></li>
+                            <li><a class="dropdown-item text-white rounded p-2" href="../prevencion/index.html"><i class="bi bi-shield-check me-2 text-secondary"></i> 5. Prevención</a></li>
+                        </ul>
+                    </div>
+
+                    <a href="../index.html" class="text-decoration-none texto-gris-suave fw-medium d-flex align-items-center gap-2">
+                        <i class="bi bi-arrow-left"></i> Volver
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="color-fondo-tarjeta border-bottom borde-personalizado position-relative overflow-hidden" style="margin-top: 64px; padding: 100px 0;">
+        <div class="container position-relative" style="z-index: 10;">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-6 mb-5 mb-md-0">
+                    <span class="texto-gris-suave fw-bold letras-separadas text-uppercase d-block mb-3" style="font-size: 0.8rem;">Bienvenido a la zona de entrenamiento</span>
+                    <h1 class="display-3 fw-bolder mb-4 text-white text-uppercase letras-juntas" style="line-height: 1.1;">
+                        Despierta tu <br>
+                        <span class="text-secondary">potencial</span>
+                    </h1>
+                    <p class="texto-gris-suave fs-5 mb-5">Entrena, descansa y evoluciona. Construye disciplina y transforma tu vida paso a paso.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#rutinas" class="btn btn-light fw-bold px-4 py-3 d-flex align-items-center gap-2">
+                            Ver rutinas <i class="bi bi-arrow-right"></i>
+                        </a>
+                        <a href="#imc" class="btn btn-outline-light fw-bold px-4 py-3">
+                            Calcula tu IMC
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="bg-black rounded-4 d-flex align-items-center justify-content-center border borde-personalizado text-secondary" style="height: 320px;">
+                        <img src="imagenes/imagenes.png" alt="Entrenamiento en el Gym" class="w-100 h-100" style="object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container py-5 mt-5">
+
+        <section class="mb-5 pb-5">
+            <div class="text-center mb-5">
+                <h2 class="h1 fw-bold text-white text-uppercase letras-juntas mb-4">¿Por qué entrenar?</h2>
+                <div class="bg-white mx-auto mb-4" style="height: 4px; width: 80px;"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="color-fondo-tarjeta p-5 rounded-4 border borde-personalizado tarjeta-con-efecto h-100">
+                        <div class="bg-black text-white rounded-circle d-flex align-items-center justify-content-center fs-4 mb-4" style="width: 60px; height: 60px;">
+                            <i class="bi bi-heart-pulse"></i>
+                        </div>
+                        <h3 class="fw-bold fs-5 text-white mb-3">Salud Cardiovascular</h3>
+                        <p class="texto-gris-suave mb-0">Mejora la circulación y fortalece el corazón previniendo enfermedades.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="color-fondo-tarjeta p-5 rounded-4 border borde-personalizado tarjeta-con-efecto h-100">
+                        <div class="bg-black text-white rounded-circle d-flex align-items-center justify-content-center fs-4 mb-4" style="width: 60px; height: 60px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi" viewBox="0 0 16 16">
+                                <path d="M13 5a1 1 0 0 1 1 1v4a1 1 0 0 1-2 0V9H4v1a1 1 0 0 1-2 0V6a1 1 0 0 1 2 0v1h8V6a1 1 0 0 1 1-1zm1-2a1 1 0 0 1 1 1v8a1 1 0 0 1-2 0V4a1 1 0 0 1 1-1zM2 3a1 1 0 0 1 1 1v8a1 1 0 0 1-2 0V4a1 1 0 0 1 1-1z"/>
+                            </svg>
+                        </div>
+                        <h3 class="fw-bold fs-5 text-white mb-3">Fuerza Muscular</h3>
+                        <p class="texto-gris-suave mb-0">Aumenta la masa magra, protege las articulaciones y mejora la postura corporal.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="color-fondo-tarjeta p-5 rounded-4 border borde-personalizado tarjeta-con-efecto h-100">
+                        <div class="bg-black text-white rounded-circle d-flex align-items-center justify-content-center fs-4 mb-4" style="width: 60px; height: 60px;">
+                            <i class="bi bi-lightning-charge-fill"></i>
+                        </div>
+                        <h3 class="fw-bold fs-5 text-white mb-3">Reduce Estrés</h3>
+                        <p class="texto-gris-suave mb-0">Libera endorfinas, disminuyendo drásticamente la ansiedad y mejorando el humor.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5 pb-5">
+            <div class="color-fondo-tarjeta rounded-4 p-5 border borde-personalizado position-relative overflow-hidden">
+                <div class="position-absolute top-0 start-0 h-100 bg-white" style="width: 8px;"></div>
+                <h2 class="fs-2 fw-bold text-white mb-5 text-center text-uppercase">Manual del Principiante</h2>
+                <div class="row g-4 text-center">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="fs-2 text-white mb-3"><i class="bi bi-fire"></i></div>
+                        <h4 class="fw-bold fs-6 text-white mb-2">1. Calienta</h4>
+                        <p class="small texto-gris-suave">10 mins previos para evitar lesiones.</p>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="fs-2 text-white mb-3"><i class="bi bi-person-arms-up"></i></div>
+                        <h4 class="fw-bold fs-6 text-white mb-2">2. Técnica</h4>
+                        <p class="small texto-gris-suave">La forma correcta supera al peso.</p>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="fs-2 text-white mb-3"><i class="bi bi-battery-half"></i></div>
+                        <h4 class="fw-bold fs-6 text-white mb-2">3. Descanso</h4>
+                        <p class="small texto-gris-suave">El músculo crece fuera del gimnasio.</p>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="fs-2 text-white mb-3"><i class="bi bi-calendar-check"></i></div>
+                        <h4 class="fw-bold fs-6 text-white mb-2">4. Disciplina</h4>
+                        <p class="small texto-gris-suave">La constancia te dará los resultados.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="row g-5 mb-5 pb-5" id="rutinas">
+            <div class="col-lg-6">
+                <h2 class="fs-2 fw-bold text-white mb-4 text-uppercase"><i class="bi bi-clipboard2-check text-secondary me-2"></i> Rutinas</h2>
+                <div class="d-flex flex-column gap-3">
+                    <div class="color-fondo-tarjeta p-4 rounded-3 border borde-personalizado tarjeta-con-efecto">
+                        <h4 class="fw-bold fs-5 text-white">Rutina Principiantes</h4>
+                        <p class="texto-gris-suave small mt-2 mb-0">Enfoque en máquinas y adaptación muscular. Ideal para 3 días a la semana.</p>
+                    </div>
+                    <div class="color-fondo-tarjeta p-4 rounded-3 border borde-personalizado tarjeta-con-efecto">
+                        <h4 class="fw-bold fs-5 text-white">Rutina de Fuerza</h4>
+                        <p class="texto-gris-suave small mt-2 mb-0">Ejercicios compuestos a bajas repeticiones con cargas altas.</p>
+                    </div>
+                    <div class="color-fondo-tarjeta p-4 rounded-3 border borde-personalizado tarjeta-con-efecto">
+                        <h4 class="fw-bold fs-5 text-white">Full Body</h4>
+                        <p class="texto-gris-suave small mt-2 mb-0">Entrenar todos los grupos musculares en una sola sesión. Optimiza el tiempo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="color-fondo-tarjeta rounded-4 p-5 border borde-personalizado h-100">
+                    <h2 class="fs-2 fw-bold text-white mb-4 text-uppercase">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi text-secondary me-2" viewBox="0 0 16 16" style="vertical-align: middle;">
+                            <path d="M3.5 1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 1 .5-.5zm-4 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 1 .5-.5z"/>
+                            <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm0 13A6 6 0 1 1 8 2a6 6 0 0 1 0 12z"/>
+                            <path d="M12.5 1a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5z"/>
+                        </svg>
+                        Nutrición
+                    </h2>
+                    <p class="text-light fs-5 mb-4 opacity-75">Tus resultados en el gimnasio dependen en gran parte de lo que pones en tu plato.</p>
+                    <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                        <li class="d-flex align-items-start gap-3 bg-black p-3 rounded-3 border borde-personalizado">
+                            <i class="bi bi-check-lg text-white mt-1"></i>
+                            <div>
+                                <strong class="text-white d-block mb-1">Proteínas:</strong> 
+                                <span class="small">Esenciales para reparar y construir el músculo (pollo, huevo, atún, tofu).</span>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-start gap-3 bg-black p-3 rounded-3 border borde-personalizado">
+                            <i class="bi bi-droplet-fill text-white mt-1"></i>
+                            <div>
+                                <strong class="text-white d-block mb-1">Hidratación:</strong> 
+                                <span class="small">Bebe de 2 a 3 litros de agua al día para mantener el rendimiento.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <section id="imc" class="mb-5 pb-5">
+            <div class="color-fondo-tarjeta rounded-4 p-4 p-md-5 border borde-personalizado shadow position-relative overflow-hidden">
+                <div class="position-absolute opacity-25" style="bottom: -50px; right: -30px; z-index: 0;">
+                    <i class="bi bi-calculator" style="font-size: 250px; color: #262626;"></i>
+                </div>
+                
+                <div class="row align-items-center position-relative" style="z-index: 1;">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <h2 class="display-6 fw-bold mb-3 text-white text-uppercase letras-juntas">Mide tu progreso</h2>
+                        <p class="texto-gris-suave mb-4 fs-5">La Calculadora de IMC asocia tu peso y altura para darte una referencia general de tu estado físico actual.</p>
+                        
+                        <div class="row g-3 mb-3">
+                            <div class="col-6">
+                                <label class="form-label small fw-bold text-secondary text-uppercase letras-separadas">Peso (kg)</label>
+                                <input type="number" id="inputPeso" placeholder="Ej: 75" class="form-control input-gimnasio py-3">
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label small fw-bold text-secondary text-uppercase letras-separadas">Altura (cm)</label>
+                                <input type="number" id="inputAltura" placeholder="Ej: 180" class="form-control input-gimnasio py-3">
+                            </div>
+                        </div>
+                        <button onclick="calcularIMC()" class="btn btn-light w-100 fw-bolder text-uppercase letras-separadas py-3 mt-2">
+                            Calcular Índice
+                        </button>
+                    </div>
+                    
+                    <div class="col-lg-6 d-flex justify-content-center">
+                        <div class="bg-black p-4 p-md-5 rounded-4 w-100 text-center border borde-personalizado d-flex align-items-center justify-content-center" style="min-height: 300px; max-width: 400px;">
+                            <div id="resultado-imc" class="w-100">
+                                <i class="bi bi-bar-chart-line-fill display-1 text-secondary opacity-25 mb-4 d-block"></i>
+                                <p class="text-secondary fw-medium mb-0">Ingresa tus datos para ver tu análisis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5 pb-5">
+            <h2 class="h1 fw-bold text-white mb-5 text-center text-uppercase letras-juntas">Movimientos Clave</h2>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="color-fondo-tarjeta rounded-3 overflow-hidden border borde-personalizado tarjeta-con-efecto" style="cursor: pointer;">
+                        <div class="bg-black d-flex align-items-center justify-content-center border-bottom borde-personalizado text-secondary text-uppercase letras-separadas" style="height: 160px; font-size: 0.75rem;">
+                            [Sentadillas]
+                        </div>
+                        <div class="p-4 text-center">
+                            <h4 class="fw-bold fs-6 text-white mb-1">Sentadilla Libre</h4>
+                            <p class="small texto-gris-suave mb-0">Cuádriceps y glúteos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="color-fondo-tarjeta rounded-3 overflow-hidden border borde-personalizado tarjeta-con-efecto" style="cursor: pointer;">
+                        <div class="bg-black d-flex align-items-center justify-content-center border-bottom borde-personalizado text-secondary text-uppercase letras-separadas" style="height: 160px; font-size: 0.75rem;">
+                            [Press Banca]
+                        </div>
+                        <div class="p-4 text-center">
+                            <h4 class="fw-bold fs-6 text-white mb-1">Press de Banca</h4>
+                            <p class="small texto-gris-suave mb-0">Pecho y tríceps.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="color-fondo-tarjeta rounded-3 overflow-hidden border borde-personalizado tarjeta-con-efecto" style="cursor: pointer;">
+                        <div class="bg-black d-flex align-items-center justify-content-center border-bottom borde-personalizado text-secondary text-uppercase letras-separadas" style="height: 160px; font-size: 0.75rem;">
+                            [Peso Muerto]
+                        </div>
+                        <div class="p-4 text-center">
+                            <h4 class="fw-bold fs-6 text-white mb-1">Peso Muerto</h4>
+                            <p class="small texto-gris-suave mb-0">Cadena posterior completa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="color-fondo-tarjeta rounded-3 overflow-hidden border borde-personalizado tarjeta-con-efecto" style="cursor: pointer;">
+                        <div class="bg-black d-flex align-items-center justify-content-center border-bottom borde-personalizado text-secondary text-uppercase letras-separadas" style="height: 160px; font-size: 0.75rem;">
+                            [Dominadas]
+                        </div>
+                        <div class="p-4 text-center">
+                            <h4 class="fw-bold fs-6 text-white mb-1">Dominadas</h4>
+                            <p class="small texto-gris-suave mb-0">Amplitud de espalda.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="row g-5 mb-5 pb-5">
+            <div class="col-lg-6">
+                <div class="color-fondo-tarjeta p-4 p-md-5 rounded-4 border borde-personalizado" style="border-top: 4px solid #6c757d !important;">
+                    <h2 class="fs-3 fw-bold text-white mb-4 text-uppercase"><i class="bi bi-exclamation-triangle-fill text-secondary me-2"></i> Evita esto</h2>
+                    <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                        <li class="d-flex gap-3 align-items-start bg-black p-3 rounded-3 border borde-personalizado">
+                            <div class="text-white mt-1"><i class="bi bi-x-circle-fill text-danger"></i></div>
+                            <div>
+                                <strong class="text-white d-block mb-1">Saltarse el calentamiento</strong>
+                                <span class="small texto-gris-suave">Reduce tu fuerza y aumenta drásticamente el riesgo de lesiones.</span>
+                            </div>
+                        </li>
+                        <li class="d-flex gap-3 align-items-start bg-black p-3 rounded-3 border borde-personalizado">
+                            <div class="text-white mt-1"><i class="bi bi-x-circle-fill text-danger"></i></div>
+                            <div>
+                                <strong class="text-white d-block mb-1">Mala postura (Ego Lifting)</strong>
+                                <span class="small texto-gris-suave">Levantar peso que no controlas arruina la técnica y la espalda.</span>
+                            </div>
+                        </li>
+                        <li class="d-flex gap-3 align-items-start bg-black p-3 rounded-3 border borde-personalizado">
+                            <div class="text-white mt-1"><i class="bi bi-x-circle-fill text-danger"></i></div>
+                            <div>
+                                <strong class="text-white d-block mb-1">No descansar</strong>
+                                <span class="small texto-gris-suave">Entrenar los 7 días sin descanso estanca tus resultados.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <h2 class="fs-3 fw-bold text-white mb-4 text-uppercase"><i class="bi bi-geo-alt-fill text-secondary me-2"></i> Spot de Entrenamiento (Cancún)</h2>
+                
+                <div class="d-flex flex-column gap-3 mb-4">
+                    <div id="btn-smartfit" onclick="actualizarMapa('smartfit')" class="d-flex align-items-center gap-4 color-fondo-tarjeta p-3 p-md-4 rounded-4 border borde-personalizado tarjeta-gimnasio-clickable">
+                        <div class="bg-black border borde-personalizado rounded d-flex align-items-center justify-content-center flex-shrink-0 text-secondary text-uppercase letras-separadas p-1" style="width: 70px; height: 70px; font-size: 0.65rem;">
+                            [Smart Fit]
+                        </div>
+                        <div>
+                            <h4 class="fw-bold text-white fs-5 mb-1">Smart Fit</h4>
+                            <p class="small texto-gris-suave mb-2">Urban Center / Av. Nichupté</p>
+                            <span class="badge bg-light text-dark text-uppercase">Equipamiento Top</span>
+                        </div>
+                    </div>
+                    <div id="btn-energy" onclick="actualizarMapa('energy')" class="d-flex align-items-center gap-4 color-fondo-tarjeta p-3 p-md-4 rounded-4 border borde-personalizado tarjeta-gimnasio-clickable">
+                        <div class="bg-black border borde-personalizado rounded d-flex align-items-center justify-content-center flex-shrink-0 text-secondary text-uppercase letras-separadas p-1" style="width: 70px; height: 70px; font-size: 0.65rem;">
+                            [Energy]
+                        </div>
+                        <div>
+                            <h4 class="fw-bold text-white fs-5 mb-1">Energy Fitness</h4>
+                            <p class="small texto-gris-suave mb-2">Plaza Malecón Américas / Centro</p>
+                            <span class="badge bg-light text-dark text-uppercase">Clases y Alberca</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="w-100 color-fondo-tarjeta rounded-4 border borde-personalizado overflow-hidden position-relative" style="height: 250px;">
+                    <iframe 
+                        id="mapa-gimnasios"
+                        src="https://maps.google.com/maps?q=Smart%20Fit%20Urban%20Center%20Cancun%20Avenida%20Nichupte&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                        class="w-100 h-100"
+                        style="border: 0; filter: invert(95%) hue-rotate(180deg) brightness(85%) contrast(90%) grayscale(20%); pointer-events: auto;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <section class="mb-5">
+            <h2 class="h1 fw-bold text-white mb-5 text-center text-uppercase letras-juntas">Dudas Frecuentes</h2>
+            <div class="mx-auto d-flex flex-column gap-3" style="max-width: 800px;">
+                <details class="color-fondo-tarjeta p-4 rounded-3 border borde-personalizado" style="cursor: pointer;">
+                    <summary class="d-flex justify-content-between align-items-center fw-bold text-white fs-5">
+                        ¿Cuántos días debo entrenar?
+                        <span class="text-secondary icono-giratorio">
+                            <i class="bi bi-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <p class="texto-gris-suave mt-3 mb-0 small border-top borde-personalizado pt-3" style="line-height: 1.6;">Para ver resultados consistentes, lo ideal es entrenar entre 3 a 5 días a la semana, dejando días de descanso intercalados para recuperarte.</p>
+                </details>
+                <details class="color-fondo-tarjeta p-4 rounded-3 border borde-personalizado" style="cursor: pointer;">
+                    <summary class="d-flex justify-content-between align-items-center fw-bold text-white fs-5">
+                        ¿En cuánto tiempo veré cambios?
+                        <span class="text-secondary icono-giratorio">
+                            <i class="bi bi-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <p class="texto-gris-suave mt-3 mb-0 small border-top borde-personalizado pt-3" style="line-height: 1.6;">Te sentirás con más energía en 2 semanas, verás cambios en el espejo a las 6 semanas, y los demás lo notarán alrededor del tercer mes.</p>
+                </details>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="bg-black text-secondary py-5 text-center border-top border-neutral-900">
+        <div class="d-flex justify-content-center gap-4 mb-3 fs-4">
+            <i class="bi bi-instagram text-secondary" style="cursor: pointer;" onmouseover="this.classList.replace('text-secondary','text-white')" onmouseout="this.classList.replace('text-white','text-secondary')"></i>
+            <i class="bi bi-tiktok text-secondary" style="cursor: pointer;" onmouseover="this.classList.replace('text-secondary','text-white')" onmouseout="this.classList.replace('text-white','text-secondary')"></i>
+        </div>
+        <p class="small text-uppercase letras-separadas mb-0">© 2026 Proyecto Escolar - Vida Saludable.</p>
+    </footer>
+</body>
+</html>
