@@ -178,7 +178,7 @@
                 </div>
                 <div class="col-md-5">
                     <div class="bg-black rounded-4 d-flex align-items-center justify-content-center border borde-personalizado text-secondary" style="height: 320px;">
-                        <img src="imagenes/imagenes.png" alt="Entrenamiento en el Gym" class="w-100 h-100" style="object-fit: cover;">
+                        <img src="imagenes/imagenes.png" onerror="this.src='https://placehold.co/600x400/000000/333333?text=IMAGEN+GYM'" alt="Entrenamiento en el Gym" class="w-100 h-100 rounded-4" style="object-fit: cover;">
                     </div>
                 </div>
             </div>
@@ -254,7 +254,6 @@
             </div>
         </section>
 
-        <!-- AQUÍ ESTABA UNO DE LOS CULPABLES: Cambié g-5 por g-4 g-lg-5 -->
         <div class="row g-4 g-lg-5 mb-5 pb-5" id="rutinas">
             <div class="col-lg-6">
                 <h2 class="fs-2 fw-bold text-white mb-4 text-uppercase"><i class="bi bi-clipboard2-check text-secondary me-2"></i> Rutinas</h2>
@@ -393,7 +392,6 @@
             </div>
         </section>
 
-        <!-- AQUÍ ESTABA EL OTRO CULPABLE: Cambié g-5 por g-4 g-lg-5 -->
         <div class="row g-4 g-lg-5 mb-5 pb-5">
             <div class="col-lg-6">
                 <div class="color-fondo-tarjeta p-4 p-md-5 rounded-4 border borde-personalizado" style="border-top: 4px solid #6c757d !important;">
@@ -428,7 +426,8 @@
                 <h2 class="fs-3 fw-bold text-white mb-4 text-uppercase"><i class="bi bi-geo-alt-fill text-secondary me-2"></i> Spot de Entrenamiento (Cancún)</h2>
                 
                 <div class="d-flex flex-column gap-3 mb-4">
-                    <div id="btn-smartfit" onclick="actualizarMapa('smartfit')" class="d-flex align-items-center gap-4 color-fondo-tarjeta p-3 p-md-4 rounded-4 border borde-personalizado tarjeta-gimnasio-clickable">
+                    <!-- Agregada la clase 'tarjeta-gimnasio-activa' al primer botón por defecto -->
+                    <div id="btn-smartfit" onclick="actualizarMapa('smartfit')" class="d-flex align-items-center gap-4 color-fondo-tarjeta p-3 p-md-4 rounded-4 border borde-personalizado tarjeta-gimnasio-clickable tarjeta-gimnasio-activa">
                         <div class="bg-black border borde-personalizado rounded d-flex align-items-center justify-content-center flex-shrink-0 text-secondary text-uppercase letras-separadas p-1" style="width: 70px; height: 70px; font-size: 0.65rem;">
                             [Smart Fit]
                         </div>
@@ -453,7 +452,7 @@
                 <div class="w-100 color-fondo-tarjeta rounded-4 border borde-personalizado overflow-hidden position-relative" style="height: 250px;">
                     <iframe 
                         id="mapa-gimnasios"
-                        src="https://maps.google.com/maps?q=Smart%20Fit%20Urban%20Center%20Cancun%20Avenida%20Nichupte&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                        src="https://maps.google.com/maps?q=Smart%20Fit%20Urban%20Center%20Cancun&t=&z=16&ie=UTF8&iwloc=&output=embed" 
                         class="w-100 h-100"
                         style="border: 0; filter: invert(95%) hue-rotate(180deg) brightness(85%) contrast(90%) grayscale(20%); pointer-events: auto;" 
                         allowfullscreen="" 
@@ -498,8 +497,9 @@
         <p class="small text-uppercase letras-separadas mb-0">© 2026 Proyecto Escolar - Vida Saludable.</p>
     </footer>
 
-    <!-- Mini script para que los botones de calcular funcionen en la vista previa -->
+    <!-- Script completo para calculadoras e interactividad del mapa -->
     <script>
+        // Función para la calculadora de IMC
         function calcularIMC() {
             const peso = document.getElementById('inputPeso').value;
             const altura = document.getElementById('inputAltura').value;
@@ -511,6 +511,30 @@
                     <p class="text-secondary mb-0">Datos recibidos: ${peso}kg y ${altura}cm</p>
                 `;
             }
+        }
+
+        // --- NUEVA FUNCIÓN PARA ACTUALIZAR EL MAPA Y LAS TARJETAS ---
+        function actualizarMapa(gymId) {
+            // 1. Diccionario con las URLs de Google Maps exactas de Cancún
+            const mapasUrls = {
+                'smartfit': 'https://maps.google.com/maps?q=Smart%20Fit%20Urban%20Center%20Cancun&t=&z=16&ie=UTF8&iwloc=&output=embed',
+                'energy': 'https://maps.google.com/maps?q=Energy%20Fitness%20Malecon%20Americas%20Cancun&t=&z=16&ie=UTF8&iwloc=&output=embed'
+            };
+
+            // 2. Cambiar la URL del iframe al que corresponde
+            const iframe = document.getElementById('mapa-gimnasios');
+            if(mapasUrls[gymId]) {
+                iframe.src = mapasUrls[gymId];
+            }
+
+            // 3. Quitarle la clase de "Activo" (borde blanco e iluminado) a TODOS los botones
+            const botonesTarjetas = document.querySelectorAll('.tarjeta-gimnasio-clickable');
+            botonesTarjetas.forEach(boton => {
+                boton.classList.remove('tarjeta-gimnasio-activa');
+            });
+
+            // 4. Agregarle la clase "Activo" SOLO al botón que se acaba de cliquear
+            document.getElementById('btn-' + gymId).classList.add('tarjeta-gimnasio-activa');
         }
     </script>
 </body>
